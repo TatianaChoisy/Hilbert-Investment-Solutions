@@ -17,8 +17,8 @@
       <img alt="menu close" class="menu-btn" src="../assets/close.svg">
       </label>
 
-      <button class="btn">Sign In</button>
-      <button class="btn sign-up">Sign Up</button>
+      <!-- <button class="btn">Sign In</button> -->
+      <!-- <button class="btn sign-up">Sign Up</button> -->
     </ul>
 
 </div>

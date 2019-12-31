@@ -5,11 +5,11 @@
   <Navbar/>
 
     <div id="summary">
-      <div id="retailer-logo"><img alt="retailer logo" class="logo-retailer" src="../assets/food1.jpeg"></div>
+      <div id="retailer-logo"><img alt="A beautiful cheesecake" class="logo-retailer" src="../assets/food1.jpeg"></div>
       <div class="left-part-summary">
-        <div id="retailer-name"><h1>Tech Test 2</h1></div>
+        <div id="retailer-name"><h1>Retailer name</h1></div>
         <div id="retailer-descr">Has autem provincias, quas Orontes ambiens amnis imosque pedes Cassii montis illius celsi praetermeans funditur in Parthenium mare, Gnaeus Pompeius superato Tigrane regnis Armeniorum abstractas dicioni Romanae coniunxit.</div>
-        <div class="trustpilot-widget" data-locale="en-GB" data-template-id="539ad0ffdec7e10e686debd7" data-businessunit-id="592eadc50000ff0005a39280" data-style-height="350px" data-style-width="100%" data-theme="light" data-stars="1,2,3,4,5" data-schema-type="Organization"><a href="https://uk.trustpilot.com/review/howto.trustpilotdemo.com" target="_blank">Trustpilot</a></div>
+        <!--<div class="trustpilot-widget" data-locale="en-GB" data-template-id="539ad0ffdec7e10e686debd7" data-businessunit-id="592eadc50000ff0005a39280" data-style-height="350px" data-style-width="100%" data-theme="light" data-stars="1,2,3,4,5" data-schema-type="Organization"><a href="https://uk.trustpilot.com/review/howto.trustpilotdemo.com" target="_blank">Trustpilot</a></div>-->
         <div class="rate">
         <img alt="rate" class="star" src="../assets/star.svg">
         <img alt="rate" class="star" src="../assets/star.svg">
@@ -85,6 +85,8 @@ export default {
   }
 }
 
+
+
 </script>
 
 <style>
@@ -93,6 +95,7 @@ export default {
 .Test2 {
     font-family: 'Montserrat', sans-serif;
     color: #393e43;
+    margin: 10px;
 
 }
 
@@ -129,6 +132,9 @@ h2 {
   margin-bottom: 30px;
   color: #1e1e1e;
   font-size: 15px;
+  font-family: "Helvetica", sans-serif;
+  color: grey;
+  
 
 }
 
@@ -184,10 +190,11 @@ h2 {
 }
 
 .star {
-  margin-top: 20px;
   width: 20px;
   height: 20px;
 }
+
+
 
 @media screen and (max-width:1300px) {
 #retailer-descr {
@@ -220,6 +227,10 @@ h2 {
 
 }
 
+.align-categories, .align-brand {
+  justify-content: space-around;
+}
+
 }
 
 @media screen and (max-width:600px) {
@@ -233,6 +244,16 @@ h2 {
   width: 400px;
 
 }
+
+.align-categories, .align-brand {
+  justify-content: space-around;
+}
+
+h2 {
+
+  text-align: center;
+}
+
 
 }  
 
