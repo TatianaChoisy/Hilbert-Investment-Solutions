@@ -1,7 +1,7 @@
 <template>
   <div class="TestOne">
     <h1 class="principal-title">Tech Test 1</h1>
-    <h2 class="title-test-one" v-for="item of items" :key="item.id">Item: {{item.id}} <br> Description: {{item.descr}} <br> Status: <br> <input type="file" @change="onFileSelected" @click="this.value=null"/></h2>
+    <h2 class="title-test-one" v-for="item of items" :key="item.id">Item: {{item.id}} <br> Description: {{item.descr}} <br><h6 id="state">Status: FILE NOT UPLOADED<br></h6>  <input type="file" @change="onFileSelected" @click="this.value=null"/></h2>
     <!-- <input v-for="item of items" :key="item.id" type="file" @change="onFileSelected"/> -->
     <!-- <button v-for="item of items" :key="item.id" @click="onUpload">Upload </button> -->
   </div>
@@ -63,6 +63,7 @@ export default {
   methods: {
     onFileSelected(event) {
     this.selectedFile = event.target.files[0]
+    document.getElementById("state").textContent="Status: UPLOADED";
         },
     onUpload() {
       const fd = new FormData();
@@ -71,22 +72,17 @@ export default {
       onUploadProgress: uploadEvent => {
         console.log('Upload Progress:' + Math.round(uploadEvent.loaded / uploadEvent.total * 100) + '%')
         }
-
     })
-
   },
-
 }
 
 }
-
 
 </script>
 
 <style>
 
 .TestOne {
-
 height: 100%;
 
 }

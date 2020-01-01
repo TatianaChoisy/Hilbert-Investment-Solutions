@@ -76,7 +76,6 @@
 import Navbar from './Navbar.vue';
 
 export default {
-
   name: 'app',
   components: {
 
@@ -84,8 +83,6 @@ export default {
     
   }
 }
-
-
 
 </script>
 
@@ -126,7 +123,6 @@ h2 {
 }
 
 #retailer-descr {
-
   width: 1000px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -146,7 +142,6 @@ h2 {
 }
 
 .food-category {
-
   width: 200px;
   height: 200px;
   border-radius: 10%;
@@ -161,13 +156,11 @@ h2 {
 }
 
 .title-tile {
-
   font-weight: 700;
 
 }
 
 .category-tile {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -194,14 +187,11 @@ h2 {
   height: 20px;
 }
 
-
-
 @media screen and (max-width:1300px) {
 #retailer-descr {
   width: 500px;
 
-}
-
+  }
 }
 
 @media screen and (max-width:1000px) {
@@ -229,12 +219,11 @@ h2 {
 
 .align-categories, .align-brand {
   justify-content: space-around;
-}
 
+  }
 }
 
 @media screen and (max-width:600px) {
-
   .logo-retailer {
     display: none;
 
@@ -250,11 +239,9 @@ h2 {
 }
 
 h2 {
-
   text-align: center;
-}
-
-
+  
+  }
 }  
 
 </style>
