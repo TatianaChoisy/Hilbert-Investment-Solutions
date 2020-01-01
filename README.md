@@ -1,5 +1,5 @@
 # Hilbert-Investment-Solutions
-Theses are tests for Hilbert Investment Solutions
+Tech Tests.
 
 ### dependencies:
 npm install # Or yarn install
