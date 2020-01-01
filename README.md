@@ -1,9 +1,8 @@
 # Hilbert-Investment-Solutions
 Theses are tests for Hilbert Investment Solutions
 
+### dependencies:
+npm install # Or yarn install
 
-##Once downloaded, open the terminal in the project directory, and continue with:
-npm install
-
-###Compiles and hot-reloads for development
+### spin up server with hot reload (npm run / yarn)
 npm run serve
